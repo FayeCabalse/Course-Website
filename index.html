@@ -331,162 +331,161 @@
             </ul>
 			
 			<h3>Message Header Fields</h3>
-            <ul>
-                <li>General Header Fields</li>
-					 <dl>
-                        <dt>Cache-Control</dt>
-                        <dd>Specifies cache directives or instructions for caching.</dd>
-                        <dt>Connection</dt>
-                        <dd>Specifies connection options.</dd>
-                        <dt>Date</dt>
-                        <dd>Represents message origin date and time.</dd>
-                        <dt>Pragma</dt>
-                        <dd>Specifies implementation-specific directives that can be included.</dd>
-                        <dt>Trailer</dt>
-                        <dd> Indicates that the trailer of a message includes a set of header fields.</dd>
-                        <dt>Transfer-Encoding</dt>
-                        <dd>This is where the type of transformation applied to message body upon
-                            transfer is indicated.
-                        </dd>
-                        <dt>Upgrade</dt>
-                        <dd>Specifies supported protocols for switching protocol.</dd>
-                        <dt>Via</dt>
-                        <dd>Indicates protocols used by gateways and proxies between user and server upon
-                            request.
-                        </dd>
-                        <dt>Warning</dt>
-                        <dd>Message additional information on its status.</dd>
-                    </dl>
+			
+				<dt>General Header Fields</dt>
+				<dl>
+					<dt>Cache-Control</dt>
+					<dd>Specifies cache directives or instructions for caching.</dd>
+					<dt>Connection</dt>
+					<dd>Specifies connection options.</dd>
+					<dt>Date</dt>
+					<dd>Represents message origin date and time.</dd>
+					<dt>Pragma</dt>
+					<dd>Specifies implementation-specific directives that can be included.</dd>
+					<dt>Trailer</dt>
+					<dd> Indicates that the trailer of a message includes a set of header fields.</dd>
+					<dt>Transfer-Encoding</dt>
+					<dd>This is where the type of transformation applied to message body upon
+						transfer is indicated.
+					</dd>
+					<dt>Upgrade</dt>
+					<dd>Specifies supported protocols for switching protocol.</dd>
+					<dt>Via</dt>
+					<dd>Indicates protocols used by gateways and proxies between user and server upon
+						request.
+					</dd>
+					<dt>Warning</dt>
+					<dd>Message additional information on its status.</dd>
+				</dl>
+			
+				<dt>Request Header Fields</dt>
+				<dl>
+					<dt>Accept</dt>
+					<dd>Specifies response-acceptable media types.</dd>
+					<dt>Accept-Charset</dt>
+					<dd>Specifies response-acceptable character sets.</dd>
+					<dt>Accept-Encoding
+					</dt>
+					<dd>Specifies response-acceptable content-codings with content-coding
+						restrictions.
+					</dd>
+					<dt>Accept-Language
+					</dt>
+					<dd>Specifies response-acceptable languages with restrictions based on a set
+						of natural languages.
+					</dd>
+					<dt>Authorization</dt>
+					<dd>Allows authentication that may be used upon receiving 401 response.</dd>
+					<dt>Expect</dt>
+					<dd>Indicates client-required behavior of the server.</dd>
+					<dt>From</dt>
+					<dd>Contains user's internet e-mail address.</dd>
+					<dt>Host</dt>
+					<dd>Is where the host and port number of requested resource is specified.</dd>
+					<dt>If-Match</dt>
+					<dd>Condition for conditional GET that verifies whether and enity is current.</dd>
+					<dt>If-Modified
+					</dt>
+					<dd>Since Condition for conditional GET that requested entity does not necessarily
+						need to be transferred unless it was modified since a specified date.
+					</dd>
+					<dt>If-None-Match
+					</dt>
+					<dd>Condition for conditional GET that verifies if none of its enities is
+						current to allow updates.
+					</dd>
+					<dt>If-Range</dt>
+					<dd>Specifies a range of entities to be transferred for update purposes.</dd>
+					<dt>If-Unmodified
+					</dt>
+					<dd>Condition for conditional GET that requested entity does not necessarily
+						need to be transferred unless it was unmodified since a specified date.
+					</dd>
+					<dt>Max-Forwards
+					</dt>
+					<dd>Limits number of forwards between proxies and gateways to a specified
+						number.
+					</dd>
+					<dt>Proxy Authorization</dt>
+					<dd>Requires authentication to allow client to identify itself.</dd>
+					<dt>Range</dt>
+					<dt>Referer
+					</dt>
+					<dd>Allows specification of URI where Request-URI was taken from to allow backlinks to
+						some resources.
+					</dd>
+					<dt>TE</dt>
+					<dd>Indicates accepted extension transfer-codings.</dd>
+					<dt>User-Agent</dt>
+					<dd>Contains requesting user agent's information.</dd>
+				</dl>
+			
+				<dt>Entity Header Fields></dt>
+				<dl>
+					<dt>Allow</dt>
+					<dd>Request-URI identified list supported set of methods.</dd>
+					<dt>Content-Encoding</dt>
+					<dd>Indicates applied additional content codings and the apprpriate decoding mechanisms
+						necessary in obtaining a particular media-type
+					</dd>
+					<dt>Content-Language</dt>
+					<dd>Indicates natural languages available for an enclosed entity.</dd>
+					<dt>Content-Length</dt>
+					<dd>Indicates a decimal number of OCTETs which indicates the size of the entity-body sent to the
+						recipient.
+					</dd>
+					<dt>Content-Location</dt>
+					<dd> May be used to indicate the location of a resource which is accessible from a location
+						different from the URI of the requested resource
+					</dd>
+					<dt>Content-MD5</dt>
+					<dd>Entity-body MD5 digest for its message integrity check(MIC).</dd>
+					<dt>Content-Range</dt>
+					<dd> Specifies the part in the entity-body where the partial body is to be applied.</dd>
+				</dl>
 				
-                <li>Request Header Fields</li>
-					<dl>
-                        <dt>Accept</dt>
-                        <dd>Specifies response-acceptable media types.</dd>
-                        <dt>Accept-Charset</dt>
-                        <dd>Specifies response-acceptable character sets.</dd>
-                        <dt>Accept-Encoding
-                        </dt>
-                        <dd>Specifies response-acceptable content-codings with content-coding
-                            restrictions.
-                        </dd>
-                        <dt>Accept-Language
-                        </dt>
-                        <dd>Specifies response-acceptable languages with restrictions based on a set
-                            of natural languages.
-                        </dd>
-                        <dt>Authorization</dt>
-                        <dd>Allows authentication that may be used upon receiving 401 response.</dd>
-                        <dt>Expect</dt>
-                        <dd>Indicates client-required behavior of the server.</dd>
-                        <dt>From</dt>
-                        <dd>Contains user's internet e-mail address.</dd>
-                        <dt>Host</dt>
-                        <dd>Is where the host and port number of requested resource is specified.</dd>
-                        <dt>If-Match</dt>
-                        <dd>Condition for conditional GET that verifies whether and enity is current.</dd>
-                        <dt>If-Modified
-                        </dt>
-                        <dd>Since Condition for conditional GET that requested entity does not necessarily
-                            need to be transferred unless it was modified since a specified date.
-                        </dd>
-                        <dt>If-None-Match
-                        </dt>
-                        <dd>Condition for conditional GET that verifies if none of its enities is
-                            current to allow updates.
-                        </dd>
-                        <dt>If-Range</dt>
-                        <dd>Specifies a range of entities to be transferred for update purposes.</dd>
-                        <dt>If-Unmodified
-                        </dt>
-                        <dd>Condition for conditional GET that requested entity does not necessarily
-                            need to be transferred unless it was unmodified since a specified date.
-                        </dd>
-                        <dt>Max-Forwards
-                        </dt>
-                        <dd>Limits number of forwards between proxies and gateways to a specified
-                            number.
-                        </dd>
-                        <dt>Proxy Authorization</dt>
-                        <dd>Requires authentication to allow client to identify itself.</dd>
-                        <dt>Range</dt>
-                        <dt>Referer
-                        </dt>
-                        <dd>Allows specification of URI where Request-URI was taken from to allow backlinks to
-                            some resources.
-                        </dd>
-                        <dt>TE</dt>
-                        <dd>Indicates accepted extension transfer-codings.</dd>
-                        <dt>User-Agent</dt>
-                        <dd>Contains requesting user agent's information.</dd>
-                    </dl>
-				
-                <li>Entity Header Fields></li>
-					<dl>
-                        <dt>Allow</dt>
-                        <dd>Request-URI identified list supported set of methods.</dd>
-                        <dt>Content-Encoding</dt>
-                        <dd>Indicates applied additional content codings and the apprpriate decoding mechanisms
-                            necessary in obtaining a particular media-type
-                        </dd>
-                        <dt>Content-Language</dt>
-                        <dd>Indicates natural languages available for an enclosed entity.</dd>
-                        <dt>Content-Length</dt>
-                        <dd>Indicates a decimal number of OCTETs which indicates the size of the entity-body sent to the
-                            recipient.
-                        </dd>
-                        <dt>Content-Location</dt>
-                        <dd> May be used to indicate the location of a resource which is accessible from a location
-                            different from the URI of the requested resource
-                        </dd>
-                        <dt>Content-MD5</dt>
-                        <dd>Entity-body MD5 digest for its message integrity check(MIC).</dd>
-                        <dt>Content-Range</dt>
-                        <dd> Specifies the part in the entity-body where the partial body is to be applied.</dd>
-                    </dl>
-					
-				<li>Response Header Fields</li>
-					<dl>
-                        <dt>Accept-Ranges
-                        </dt>
-                        <dd>Allows indication of range for acceptance range of requests for a particular
-                            resource.
-                        </dd>
-                        <dt>Age</dt>
-                        <dd>Indicates estimate time since the origin generated the response.</dd>
-                        <dt>ETag</dt>
-                        <dd>Current value for a particular entity tag of the requested variant is provided.</dd>
-                        <dt>Location
-                        </dt>
-                        <dd>Used for redirection from the the Request-URI to another location for completion
-                            or identifying new resources.
-                        </dd>
-                        <dt>Proxy-Authenticate
-                        </dt>
-                        <dd>Indicates proxy authentication scheme and parameters of a
-                            Request-URI.
-                        </dd>
-                        <dt>Retry-After
-                        </dt>
-                        <dd>Can be used with 503 to indicate expected time for a service to be
-                            unavailable.
-                        </dd>
-                        <dt>Server
-                        </dt>
-                        <dd>Contains information on the software being used used by the origin server in
-                            handling a request.
-                        </dd>
-                        <dt>Vary
-                        </dt>
-                        <dd>Determines whether cache is permitted while the response is fresh with a set of
-                            request-header fields. Criteria is advised for uncacheabe responses.
-                        </dd>
-                        <dt>www-Authenticate
-                        </dt>
-                        <dd>Consists parameters and schemes of authentication to Request-URI that
-                            MUST be included in 401(Unauthorized) response message.
-                        </dd>
-                    </dl>
-            </ul>
+				<dt>Response Header Fields</dt>
+				<dl>
+					<dt>Accept-Ranges
+					</dt>
+					<dd>Allows indication of range for acceptance range of requests for a particular
+						resource.
+					</dd>
+					<dt>Age</dt>
+					<dd>Indicates estimate time since the origin generated the response.</dd>
+					<dt>ETag</dt>
+					<dd>Current value for a particular entity tag of the requested variant is provided.</dd>
+					<dt>Location
+					</dt>
+					<dd>Used for redirection from the the Request-URI to another location for completion
+						or identifying new resources.
+					</dd>
+					<dt>Proxy-Authenticate
+					</dt>
+					<dd>Indicates proxy authentication scheme and parameters of a
+						Request-URI.
+					</dd>
+					<dt>Retry-After
+					</dt>
+					<dd>Can be used with 503 to indicate expected time for a service to be
+						unavailable.
+					</dd>
+					<dt>Server
+					</dt>
+					<dd>Contains information on the software being used used by the origin server in
+						handling a request.
+					</dd>
+					<dt>Vary
+					</dt>
+					<dd>Determines whether cache is permitted while the response is fresh with a set of
+						request-header fields. Criteria is advised for uncacheabe responses.
+					</dd>
+					<dt>www-Authenticate
+					</dt>
+					<dd>Consists parameters and schemes of authentication to Request-URI that
+						MUST be included in 401(Unauthorized) response message.
+					</dd>
+				</dl>
 			
 			<h3>HTTP Extensions</h3>
 				<p>HTTP can be extended by defining new request methods, messaging headers, and/or status code, and then implementing servers and/or clients that make use of new functionality</p>
