@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<title>Web Systems and Technologies</title>
+
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+
+		<!-- animate -->
+		<link rel="stylesheet" href="css/animate.min.css">
+		<!-- bootstrap -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- magnific pop up -->
+		<link rel="stylesheet" href="css/magnific-popup.css">
+		<!-- font-awesome -->
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<!-- google font -->
+		<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700,800' rel='stylesheet' type='text/css'>
+		<!-- custom -->
+		<link rel="stylesheet" href="css/style.css">
+
+	</head>
+	<body data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
+
+		<!-- start navigation -->
+		<div class="navbar navbar-fixed-top navbar-default" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="icon icon-bar"></span>
+						<span class="icon icon-bar"></span>
+						<span class="icon icon-bar"></span>
+					</button>
+					<a href="index.html" class="navbar-brand"><img src="images/logo.png" class="img-responsive" alt="logo"></a>
+				</div>
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="index.html" class="smoothScroll">HOME</a></li>
+						<li><a href="prelims.html" class="smoothScroll">PRELIMS</a></li>
+						<li><a href="midterms.html" class="smoothScroll">MIDTERMS</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- end navigation -->
+                      <hr>
+                 <div class = "Programmatic" class ="collapse">
+                <div style="text-align:center;">
+                    <button data-toggle="collapse" data-target="#Collapse-Div8" style="margin: 20px;"><h2>JavaScript Programmatic Constructs</h2></button>
+                </div>
+                <div id = "Collapse-Div8" class ="collapse">
+                        <h3>JavaScript Values</h3>
+                    <ul>
+                            <li>The JavaScript syntax defines two types of values: Fixed values and variable values.</li>
+							<ul class = "content">
+                                <li>Fixed values are called <strong>literals</strong>.</li>
+                                The most important rules for writing fixed values are:
+                                <br>
+                                <ul class = "content">
+                                    <li><strong>Numbers</strong> are written with or without decimals.</li>
+                                    <li><strong>Strings</strong> are text, written within double or single quotes.</li>
+                                </ul>
+                                <li>Variable values are called <strong>variables</strong></li>
+                                <ul class = "content">
+                                    <li>Variables are used to store data values.</li>
+                                    <li>An <strong>equal sign</strong> is used to assign values to variables.</li>
+                                </ul>
+                            </ul>
+						</ul>
+						<h3>JavaScript Operators</h3>
+						<ul class = "content">
+							<li>JavaScript uses <strong>arithmetic operators</strong> ( + - *  / ) to compute values.</li>
+							<li>JavaScript uses an <strong>assignment operator</strong> ( = ) to assign values to variables.</li>
+						</ul>
+                        <h3>JavaScript Expressions</h3>
+                        <ul class = "content">
+                            <li>An expression is a combination of values, variables, and operators, which computes to a value.</li>
+                            &nbsp<small>Example: 2 * 5</small>
+                            <li>Expressions can also contain variable values.</li>
+                            &nbsp<small>Example: a * 5</small>
+                            <li>The values can be of various types, such as numbers and strings.</li>
+                            &nbsp<small>Example: "Webtek" + " " + "Lecture"</small>
+                        </ul>
+                        <h3>JavaScript Keywords</h3>
+                        <ul class = "content">
+                            <li>Variables with the <strong>var</strong> keyword becomes a global variable.</li>
+                            <ul class = "content">
+                            <pre>
+var a = 10;
+function f(){
+    var a = 20;
+    console.log(a);                     RESULT: 10
+    {                                           20
+        var a = 30;                             30
+        console.log(a);         
+    }
+    console.log(a);
+}
+
+                            </pre>
+                            </ul>
+                        </ul>
+                        <ul class = "content">
+                            <li>Variables with the <strong>let</strong> keyword only exists within the block.</li>
+                            <ul class = "content">
+                            <pre>
+let a = 10;
+function f(){
+    let a = 20;
+    console.log(a);                     RESULT: 20
+    {                                           30
+        let a = 30;                             20
+        console.log(a);         
+    }
+    console.log(a);
+}
+                            </pre>
+                            </ul>
+                        </ul>                       
+                        <ul class = "content">
+                            <li>Variables with the <strong>const</strong> keyword don't introduct a global property of the variable.</li>
+                            <ul class = "content">
+                            <pre>
+const a = 10;
+function f(){
+    const a = 20;
+    console.log(a);                     RESULT: 20
+    {                                           30
+        const a = 30;                           20
+        console.log(a);         
+    }
+    console.log(a);
+}
+                            </pre>
+                            </ul>
+                        </ul>'
+                        <h3>JavaScript and Camel Case</h3>
+                        <ul class = "content">
+                            <li>Hyphens</li>
+                            &nbsp<small>Example: item-name, item-category, item-price</small>
+                            <li>Underscore</li>
+                            &nbsp<small>Example: item_name, item_category, item_price</small>
+                            <li>Upper Camel Case (Pascal Case)</li>
+                            &nbsp<small>Example: ItemName, ItemCategory, ItemPrice</small>
+                        </ul>
+                     </div>
+                </div>
+        </div>
+        		<!-- start footer -->
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<p class="text-center">Copyright &copy; 2018 Web Systems and Technologies</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- end footer -->
+
+
+		<!-- jQuery -->
+		<script src="js/jquery.js"></script>
+		<!-- bootstrap -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- isotope -->
+		<script src="js/isotope.js"></script>
+		<!-- images loaded -->
+   		<script src="js/imagesloaded.min.js"></script>
+   		<!-- wow -->
+		<script src="js/wow.min.js"></script>
+		<!-- smoothScroll -->
+		<script src="js/smoothscroll.js"></script>
+		<!-- jquery flexslider -->
+		<script src="js/jquery.flexslider.js"></script>
+		<!-- Magnific Pop up -->
+		<script src="js/jquery.magnific-popup.min.js"></script>
+		<!-- custom -->
+		<script src="js/custom.js"></script>
+        
+	</body>
+</html>
